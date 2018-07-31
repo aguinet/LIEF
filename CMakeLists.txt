@@ -4,9 +4,7 @@ set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
 # Modules
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/")
-if (MSVC)
-  include(ChooseMSVCCRT)
-endif()
+include(ChooseMSVCCRT)
 include(CheckCXXCompilerFlag)
 include(CheckCCompilerFlag)
 include(Findcppcheck)
